@@ -1,0 +1,234 @@
+Here is a record of the sql code I used:
+
+-- Combining all 12 tables into 1 for easy querying for the whole year
+truncate table bb_data_2024
+insert into bb_data_2024 (
+	ride_id,
+	rideable_type, 
+	started_at,
+	ended_at, 
+	start_station_name, 
+	start_station_id, 
+	end_station_name, 
+	end_station_id, 
+	start_lat, 
+	start_lng, 
+	end_lat, 
+	end_lng, 
+	member_casual 
+)
+
+
+select 
+	ride_id, 
+	rideable_type, 
+	started_at,
+	ended_at, 
+	start_station_name, 
+	start_station_id, 
+	end_station_name, 
+	end_station_id, 
+	start_lat, 
+	start_lng, 
+	end_lat, 
+	end_lng, 
+	member_casual 
+from bb1 --January
+
+union all
+
+	select 
+		ride_id, 
+		rideable_type, 
+		started_at,
+		ended_at, 
+		start_station_name, 
+		start_station_id, 
+		end_station_name, 
+		end_station_id, 
+		start_lat, 
+		start_lng, 
+		end_lat, 
+		end_lng, 
+		member_casual 
+	from bb2 --February
+
+union all 
+
+	select 
+		ride_id, 
+		rideable_type, 
+		started_at,
+		ended_at, 
+		start_station_name, 
+		start_station_id, 
+		end_station_name, 
+		end_station_id, 
+		start_lat, 
+		start_lng, 
+		end_lat, 
+		end_lng, 
+		member_casual 
+	from bb3 --March
+
+union all 
+
+	select 
+		ride_id, 
+		rideable_type, 
+		started_at,
+		ended_at, 
+		start_station_name, 
+		start_station_id, 
+		end_station_name, 
+		end_station_id, 
+		start_lat, 
+		start_lng, 
+		end_lat, 
+		end_lng, 
+		member_casual 
+	from bb4 --April
+
+union all 
+
+select 
+	ride_id, 
+	rideable_type, 
+	started_at,
+	ended_at, 
+	start_station_name, 
+	start_station_id, 
+	end_station_name, 
+	end_station_id, 
+	start_lat, 
+	start_lng, 
+	end_lat, 
+	end_lng, 
+	member_casual 
+from bb5 --May
+
+union all 
+
+select 
+	ride_id, 
+	rideable_type, 
+	started_at,
+	ended_at, 
+	start_station_name, 
+	start_station_id, 
+	end_station_name, 
+	end_station_id, 
+	start_lat, 
+	start_lng, 
+	end_lat, 
+	end_lng, 
+	member_casual 
+from bb6 --June
+
+union all 
+
+select 
+	ride_id, 
+	rideable_type, 
+	started_at,
+	ended_at, 
+	start_station_name, 
+	start_station_id, 
+	end_station_name, 
+	end_station_id, 
+	start_lat, 
+	start_lng, 
+	end_lat, 
+	end_lng, 
+	member_casual 
+from bb7 --July
+
+union all 
+
+select 
+	ride_id, 
+	rideable_type, 
+	started_at,
+	ended_at, 
+	start_station_name, 
+	start_station_id, 
+	end_station_name, 
+	end_station_id, 
+	start_lat, 
+	start_lng, 
+	end_lat, 
+	end_lng, 
+	member_casual 
+from bb8 --August
+
+union all 
+
+select 
+	ride_id, 
+	rideable_type, 
+	started_at,
+	ended_at, 
+	start_station_name, 
+	start_station_id, 
+	end_station_name, 
+	end_station_id, 
+	start_lat, 
+	start_lng, 
+	end_lat, 
+	end_lng, 
+	member_casual 
+from bb9 --September
+
+union all 
+
+select 
+	ride_id, 
+	rideable_type, 
+	started_at,
+	ended_at, 
+	start_station_name, 
+	start_station_id, 
+	end_station_name, 
+	end_station_id, 
+	start_lat, 
+	start_lng, 
+	end_lat, 
+	end_lng, 
+	member_casual 
+from bb10 --October
+
+union all 
+
+select 
+	ride_id, 
+	rideable_type, 
+	started_at,
+	ended_at, 
+	start_station_name, 
+	start_station_id, 
+	end_station_name, 
+	end_station_id, 
+	start_lat, 
+	start_lng, 
+	end_lat, 
+	end_lng, 
+	member_casual 
+from bb11 --November
+
+union all 
+
+select 
+	ride_id, 
+	rideable_type, 
+	started_at,
+	ended_at, 
+	start_station_name, 
+	start_station_id, 
+	end_station_name, 
+	end_station_id, 
+	start_lat, 
+	start_lng, 
+	end_lat, 
+	end_lng, 
+	member_casual 
+from bb12 --December
